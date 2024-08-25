@@ -64,7 +64,7 @@ public class HospitalController {
 	@PostMapping(value="/saveRecord")//, consumes = {MediaType.APPLICATION_JSON_VALUE }, produces =  {MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity<Hospital> saveRecord(@Valid @RequestBody Hospital hospital) {
 		LOGGER.info("Hospital Details :" +hospital);
-		 
+		 System.out.println("Sumit Kumar Singh2");
 		if(hospital.getHospName() == null || hospital.getHospName().isEmpty()) {
 			System.out.println("AAAAAAAAAAAAAAAA");
 		throw new BusinessException("Sumit Bad Request");
